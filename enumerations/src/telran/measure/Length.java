@@ -33,16 +33,19 @@ public class Length  implements Comparable<Length> {
 	public int compareTo(Length o) {
 		return Float.compare(amount, o.convert(lengthUnit).amount);
 	}
+	
 	/**
 	 * 
 	 * @param unit
 	 * @return new Length object with a given LengthUnit
 	 * example, convert(LengthUnit.M) returns Length in meters 
 	 */
+	
 	public Length convert(LengthUnit unit) {
 		
 		return new Length(amount * lengthUnit.value / unit.value, unit);
 	}
+	
 	@Override
 	/**
 	 * returns string with amount and length unit pinned to amount with no space

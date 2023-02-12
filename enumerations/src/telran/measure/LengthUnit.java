@@ -17,7 +17,6 @@ public enum LengthUnit {
 				);
 	}
 	
-	
 	public float getValue() {
 		return value;
 	}
