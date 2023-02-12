@@ -17,10 +17,6 @@ public enum LengthUnit {
 				);
 	}
 	
-//	public float convert(LengthUnit to, float amount) {
-//		return value * amount / to.value;
-//	}
-	
 	public float getValue() {
 		return value;
 	}
